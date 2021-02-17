@@ -2,6 +2,8 @@ package serialization;
 
 import java.util.List;
 
+//This is pojo class
+
 public class AddPlace {
 	private Location location;
 	private int accuracy;
