@@ -1,0 +1,133 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-12T15:17:53.197Z",
+        "line": 12,
+        "name": "Verify if place successfully added using Add Place API",
+        "description": "",
+        "id": "validating-place-api;verify-if-place-successfully-added-using-add-place-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1224000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "AddPlace payload with \"Ayush\" \"Spanish\" \"212 ADE Street\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ayush\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Spanish\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"212 ADE Street\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinations.stepDefination.add_place_payload_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1180000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"AddPlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddPlaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "POST",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinations.stepDefination.user_calls_something_with_something_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the api call got success result with status code 200",
+            "match": {
+              "location": "stepDefinations.stepDefination.the_api_call_got_success_result_with_status_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 729000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"status\" in response body is \"ok\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "ok",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinations.stepDefination.something_in_response_body_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1695000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Validate the \"Ayush\" in the \"GetPlaceAPI\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ayush\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinations.stepDefination.validate_the_in_the_response(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Place Api",
+    "description": "",
+    "id": "validating-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/AddPlace.feature",
+    "tags": []
+  }
+]
